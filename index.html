@@ -60,7 +60,7 @@
 </style>
 <style>
 body {
-  background-color: #2C2F33;
+  background-color: #2C2F33
 }
 p {
   color: #FFFFFF;
@@ -103,18 +103,25 @@ a {
 <div class="three"><h1>Live videos</h1></div>
 <section class="container">
   <div class="headerone">
-    
-  
-    <div id="twitch-embed">
-    
-    <iframe src="https://embed.twitch.tv?channel=charletv&amp;layout=video&amp;referrer=https%3A%2F%2Fpbjpage.github.io%2Fpbj%2F" allowfullscreen="" scrolling="no" frameborder="0" allow="autoplay; fullscreen" width="500" height="300"></iframe>
-  
-
-</div>
+    <html>
+  <body>
+    <div id="twitch-embed"></div>
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 560,
+        height: 315,
+        channel: "charletv",
+        layout: "video",
+      });
+    </script>
+  </body>
+</html>
+</h1></div>
 
   <div class="headertwo">
-    <iframe width="500" height="300" src="https://www.youtube.com/embed/live_stream?channel=UCzr6q-xu4I3_yzcml8cQ7bg" frameborder="0" allowfullscreen=""></iframe>
-</div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/live_stream?channel=UCzr6q-xu4I3_yzcml8cQ7bg" frameborder="0" allowfullscreen></iframe>
+</h1></div>
 <br>
 <br>
 <br>
@@ -187,8 +194,7 @@ a {
     <p> Nothing yet.</p>
     <p>check back soon!</p>
 </h1></div>
-  
-</section></div></section>
+
 
 
 </body></html>
