@@ -186,28 +186,6 @@ a {
     <p> Nothing yet.</p>
     <p>check back soon!</p>
 </h1></div>
-<script>
-function goTo() {
-    var input = get("box").value,
-        frame = get("frame");
-    
-    if(input.match(/\bhttp(.)*/)) {
-        frame.src = input;
-    } else {
-        input = "http://" + input;
-        frame.src = input;
-    }      
-}
-
-function get(id) {
-    return document.getElementById(id);    
-}  
-</script>
-
-<input type="text" id="box" value="http://www.example.com" />
-<button onClick="goTo();">go</button>
-
-<iframe src="http://www.example.com" frameborder="0" id="frame" width="100%" height="90%"></iframe>
 
 
 </body></html>
